@@ -17,7 +17,8 @@ Only exporting the `DBPASS` value (and modifying the other values in the script)
 
 ```bash
 $ export DBPASS=...
-$ docker run -e DBPASS=$DBPASS -v $(pwd):/app docker.io/geekmuse/python-redshift-connector:0.0.1 example.py
+$ docker run -e DBPASS=$DBPASS -v $(pwd):/app \
+	docker.io/geekmuse/python-redshift-connector:0.0.1 example.py
 ```
 
 This should connect to your cluster, assuming your local machine has a valid network path to your cluster.
