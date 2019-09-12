@@ -1,6 +1,6 @@
 IMAGE_NAME ?= python-redshift-connector
 REPO ?= geekmuse
-VSN ?= 0.0.1
+VSN ?= $(shell git describe --tags)
 
 .DEFAULT_TARGET = build
 
